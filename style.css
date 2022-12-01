@@ -2,6 +2,7 @@
   font-family: "poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -117,6 +118,7 @@ article {
   justify-content: space-between;
 }
 .card {
+  margin-top: 25px;
   width: 300px;
   min-height: 300px;
   background: white;
@@ -128,7 +130,7 @@ article {
 
 .btn-card {
   background: green;
-  font-size: 18px;
+  font-size: 15px;
   padding: 8px 10px;
   border: none;
   border-radius: 5px;
@@ -149,6 +151,10 @@ form {
   gap: 10px;
 }
 
+.btn {
+  align-self: flex-end;
+}
+
 footer {
   background: black;
   padding: 10px;
@@ -156,4 +162,128 @@ footer {
   text-align: center;
   min-height: 30px;
   margin-top: 32px;
+}
+
+/* min-width,max-width// <=, >= */
+/* media query  break points 768px, 1224px*/
+/* laptop screen */
+/* mobile screen */
+/* laptop */
+
+@media (max-width: 1224px) {
+  .posts {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posts-content {
+    margin-top: 30px;
+    width: 66%;
+    margin-right: 60px;
+  }
+  .side-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .country {
+    width: 45%;
+  }
+  .date {
+    width: 45%;
+  }
+  .date {
+    margin-top: 0;
+  }
+  .card {
+    /* width 450px */
+    padding: 10px;
+    min-height: 300px;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    box-shadow: -5px 5px 10px 5px;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+  }
+  /* for mobile devices */
+  /* max width */
+  @media (0<=width<=768px) {
+    .global-msg {
+      display: none;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: -5px 5px 10px 5px gray;
+    }
+
+    .titile {
+      margin: 1rem 0;
+    }
+    article p {
+      margin: 1rem 0;
+    }
+    article button {
+      width: 100%;
+    }
+    .side-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .country,
+    .date {
+      width: 100%;
+      text-align: center;
+    }
+    .side-links ul {
+      list-style: none;
+    }
+    .side-links ul li {
+      text-decoration: underline;
+      cursor: pointer;
+      color: red;
+    }
+    .country {
+      margin-bottom: 20px;
+    }
+    .art-image {
+      width: 400px;
+      height: 250px;
+      margin-right: 20px;
+    }
+
+    .btn-card {
+      width: 100%;
+    }
+    form {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form,
+    div,
+    input {
+      width: 90%;
+    }
+
+    form div input {
+      width: 100%;
+    }
+    .btn {
+      align-self: center;
+    }
+  }
 }
