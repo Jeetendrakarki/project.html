@@ -19,49 +19,141 @@
   color: white;
 }
 
-.socials{
-    color: white;
-
+.socials {
+  color: white;
 }
 /* nav bar section */
-.nav-bar{
-    background: rgb(126, 96, 96);
+.nav-bar {
+  background: rgb(126, 96, 96);
 }
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu ul{
-    list-style: none;
-    display: flex;
-
+.nav-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu ul li{
-    margin-left: 16px;
+.menu ul {
+  list-style: none;
+  display: flex;
 }
-.menu ul li:hover{
-    cursor: pointer;
+
+.menu ul li {
+  margin-left: 16px;
+}
+.menu ul li:hover {
+  cursor: pointer;
 }
 /* hero section */
-.hero{
+.hero {
+  min-height: 80vh;
+  background-image: url(image/travel.jpg);
+  background-size: cover;
+  background-position: center;
 
-    min-height: 80vh;
-    background-image: url(image/travel.jpg);
-    background-size: cover;
-    background-position: center;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-content{
-    color: white;
-    width: 450px;
-    background: green;
-    padding: 30px 20px;
-    border-radius: 20px;
-    text-align: center;
+.hero-content {
+  /* color: white; */
+  width: 450px;
+  background: rgba(255, 255, 255, 0.522);
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+/* post section */
+.posts {
+  display: flex;
+}
+
+.posts-content {
+  margin-top: 30px;
+  width: 66%;
+  margin-right: 60px;
+}
+.side-links {
+  width: 34%;
+  margin-top: 50px;
+}
+.country {
+  background: skyblue;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.date {
+  margin-top: 80px;
+  background: skyblue;
+  padding: 40px;
+  border-radius: 5px;
+}
+article {
+  display: flex;
+  margin-top: 32px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+.art-image {
+  width: 400px;
+
+  margin-right: 20px;
+}
+
+.titile {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* card section */
+.card-section {
+  margin-top: 40px;
+  background: skyblue;
+  padding: 20px 0;
+}
+.card-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 300px;
+  min-height: 300px;
+  background: white;
+  box-shadow: -5px 5px 10px 5px black;
+}
+.card img {
+  border: 5px 5px 0 0;
+}
+
+.btn-card {
+  background: green;
+  font-size: 18px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* subscription section */
+.subscription {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  background: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  min-height: 30px;
+  margin-top: 32px;
 }
